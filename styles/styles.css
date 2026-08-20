@@ -346,6 +346,29 @@ a {
   line-height: 1.75;
 }
 
+.timeline-item ul {
+  margin-top: 0.8rem;
+}
+
+.timeline-item li {
+  color: var(--color-muted);
+  line-height: 1.65;
+  margin-top: 0.55rem;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.timeline-item li::before {
+  background: var(--color-secondary);
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  left: 0;
+  position: absolute;
+  top: 0.7rem;
+  width: 6px;
+}
+
 .project-showcase {
   display: grid;
   gap: 1.5rem;
