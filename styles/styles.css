@@ -1,11 +1,12 @@
 :root {
-  --color-primary: #fffff2;
-  --color-secondary: #cfc79b;
-  --color-ink: #000;
-  --color-muted: #101429;
-  --color-soft: #e8e3c9;
-  --color-panel: #fffef1;
-  --shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+  --color-primary: #faf8f3;
+  --color-secondary: #74846a;
+  --color-accent-text: #647457;
+  --color-ink: #4b4b40;
+  --color-muted: #626658;
+  --color-soft: #e3e6d6;
+  --color-panel: #fffdf7;
+  --shadow: 0 18px 50px rgba(75, 75, 64, 0.10);
 }
 
 * {
@@ -36,7 +37,7 @@ a {
 .controls {
   align-items: center;
   backdrop-filter: blur(12px);
-  background: rgba(255, 255, 242, 0.84);
+  background: rgba(241, 240, 231, 0.92);
   border: 1px solid var(--color-soft);
   border-radius: 999px;
   display: flex;
@@ -90,7 +91,7 @@ a {
   aspect-ratio: 1;
   background:
     radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.95), transparent 28%),
-    linear-gradient(135deg, #171a25, #4d5366 52%, #cfc79b);
+    linear-gradient(135deg, #74846a, #a7b198 52%, #647457);
   border-radius: 50%;
   box-shadow: var(--shadow);
   display: flex;
@@ -103,8 +104,8 @@ a {
 
 .portrait-card::after {
   background:
-    radial-gradient(circle at 30% 67%, transparent 0 34%, rgba(255, 255, 242, 0.08) 35%, transparent 57%),
-    linear-gradient(135deg, rgba(23, 26, 37, 0.04), rgba(207, 199, 155, 0.1));
+    radial-gradient(circle at 30% 67%, transparent 0 34%, rgba(250, 248, 243, 0.08) 35%, transparent 57%),
+    linear-gradient(135deg, rgba(75, 75, 64, 0.04), rgba(116, 132, 106, 0.1));
   content: "";
   inset: 0;
   pointer-events: none;
@@ -122,7 +123,7 @@ a {
 }
 
 .eyebrow {
-  color: var(--color-secondary);
+  color: var(--color-accent-text);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -140,7 +141,7 @@ a {
 
 .hero-copy h1 span,
 .main-title h2 span {
-  color: var(--color-secondary);
+  color: var(--color-accent-text);
 }
 
 .hero-text,
@@ -250,10 +251,10 @@ a {
 .project-card,
 .skill-group,
 .award-card {
-  background: rgba(255, 255, 255, 0.48);
+  background: var(--color-panel);
   border: 1px solid var(--color-soft);
   border-radius: 8px;
-  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.07);
+  box-shadow: 1px 2px 15px rgba(75, 75, 64, 0.05);
 }
 
 .about-item {
@@ -266,13 +267,13 @@ a {
 
 .about-item:hover,
 .project-card:hover {
-  border-color: var(--color-secondary);
+  border-color: var(--color-accent-text);
   box-shadow: var(--shadow);
   transform: translateY(-5px);
 }
 
 .large-text {
-  color: var(--color-secondary);
+  color: var(--color-accent-text);
   font-size: 2.4rem;
   font-weight: 800;
 }
@@ -382,8 +383,8 @@ a {
 
 .project-figure {
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(232, 227, 201, 0.58)),
-    radial-gradient(circle at 82% 18%, rgba(207, 199, 155, 0.4), transparent 30%);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(236, 238, 226, 0.75)),
+    radial-gradient(circle at 82% 18%, rgba(116, 132, 106, 0.25), transparent 30%);
   border: 1px solid var(--color-soft);
   border-radius: 8px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
@@ -397,7 +398,7 @@ a {
 .image-figure::before {
   background:
     radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.32), transparent 25%),
-    linear-gradient(135deg, rgba(207, 199, 155, 0.24), transparent 42%);
+    linear-gradient(135deg, rgba(116, 132, 106, 0.12), transparent 42%);
   content: "";
   inset: 0;
   pointer-events: none;
@@ -406,9 +407,9 @@ a {
 }
 
 .image-figure img {
-  border: 1px solid rgba(16, 20, 41, 0.14);
+  border: 1px solid rgba(75, 75, 64, 0.14);
   border-radius: 6px;
-  box-shadow: 0 16px 38px rgba(16, 20, 41, 0.18);
+  box-shadow: 0 16px 38px rgba(75, 75, 64, 0.12);
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -480,7 +481,7 @@ a {
 }
 
 .award-card:hover {
-  border-color: var(--color-secondary);
+  border-color: var(--color-accent-text);
   box-shadow: var(--shadow);
   transform: translateY(-5px);
 }
